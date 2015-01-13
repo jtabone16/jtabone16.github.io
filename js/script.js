@@ -5,17 +5,6 @@ jQuery(window).load(function(){
 		$('.loader').fadeOut(750);
 	});
 
-	// Portfolio
-	var $container = $('.portfolio-items');
-	$container.isotope({
-		filter: '*',
-		animationOptions: {
-			duration: 1500,
-			easing: 'linear',
-			queue: false
-		}
-	});
-
 	$('#filters a').click(function(){
 		$('#filters .current').removeClass('current');
 		$(this).addClass('current');
@@ -60,9 +49,6 @@ $(document).ready(function(){
 		itemsTablet:[600,2],
 		itemsMobile:[480,1]
 	});
-
-	// Portfolio modal
-	$('.fullwidth').boxer();
 
 	// Animations
 	var windowH = $(window).height();

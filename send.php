@@ -24,15 +24,15 @@
 	$mail->SMTPAuth   	= true;
 	$mail->Host       	= 'smtp.mandrillapp.com';
 	$mail->Port       	= 587;
-	$mail->Username   	= 'mandrill@username.com';
-	$mail->Password   	= 'mandrillApiKey';
-	$mail->Subject    	= 'New '.$formTypes[$_POST['type']]. ' Message from Website Name';
+	$mail->Username   	= 'jtabone16@gmail.com';
+	$mail->Password   	= '0rpI45TTJGW4ajOXTbVsTw';
+	$mail->Subject    	= 'New '.$formTypes[$_POST['type']]. ' Message from johntabone';
 	$mail->CharSet		= 'utf-8';
 	$mail->WordWrap 	= 50;
 	
-	$mail->SetFrom('no-reply@website.com', 'Website Name');
+	$mail->SetFrom('no-reply@johntabone.com', 'johntabone');
 
-	$mail->AddAddress('yourmail@address.com');
+	$mail->AddAddress('jtabone16@gmail.com');
 	
 	extract($_POST['send']);
 
